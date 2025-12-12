@@ -29,15 +29,17 @@ I also had to fix the `Savings ($)` column to convert it to a float, as it was o
 ### Key Visualizations
 Include key visualizations that highlight important aspects of the data. Use graphs, charts, or any other visual representation to make your points.
 
-#### Visualization 1: [Title]
-[Description and interpretation of the first visualization.]
+#### Visualization 1: [Default by Diploma]
+This count plot shows how many alumni defaulted by diploma type. 
 
-![Visualization 1](path/to/image1.png)
+We see that it is more likely for an alumni to default than not, but between defaulting and not, there is a greater disparity among Standard Diplomas than College Prep Diplomas. 
 
-#### Visualization 2: [Title]
-[Description and interpretation of the second visualization.]
+![default by diploma](./images/default_diploma.png)
 
-![Visualization 2](path/to/image2.png)
+#### Visualization 2: [Default by Gender]
+When looking at the number of defaulted alumni by gender, we see that Males tend to default more than Females. 
+
+![default by gender](./images/default_gender.png)
 
 ## Conclusions/Recommendations
 I performed predictive modeling with 3 types of algorithims: Logistic Regression, K Nearest Neighbors, and Random Forest. 
@@ -52,8 +54,14 @@ The results are below.
 
 The Logistic Regression model performed the best, accurately predicting the defaulting status 59% of the time. 
 
+Below is the confusion matrix of the Logistic Regression model on the test set. We see that the model correctly predicted 8/9 Yes (defaulted), and 5 / 13 No (did not default). 
+
+These scores are not great, which means there are likely alot of variables outside of the dataset that are contributing factors to whether an alumni defaults or not. 
+
+![confusion matrix](./images/log_conf.png)
+
 ## Additional Information
-Include any additional information, references, or resources that might be relevant for understanding the analysis.
+Data provided by Coding Temple
 
 ---
 
