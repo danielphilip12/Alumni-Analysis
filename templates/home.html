@@ -27,34 +27,60 @@
                 <label for="marital_status" class="form-label text-light"
                   >Marital Status:</label
                 >
-                <input
+                <!-- <input
                   type="text"
                   name="marital_status"
                   class="form-control"
                   required
-                />
+                /> -->
+                <select
+                  name="marital_status"
+                  id="marital_status"
+                  class="form-control"
+                >
+                  <option value="Married">Married</option>
+                  <option value="Single">Single</option>
+                  <option value="Divorced">Divorced</option>
+                </select>
               </div>
+
               <div class="col-4">
                 <label for="diploma_type" class="form-label text-light"
                   >Diploma Type:</label
                 >
-                <input
+                <!-- <input
                   type="text"
                   name="diploma_type"
                   class="form-control"
                   required
-                />
+                /> -->
+                <select
+                  name="diploma_type"
+                  id="diploma_type"
+                  class="form-control"
+                >
+                  <option value="Standard Diploma">Standard Diploma</option>
+                  <option value="College Prep Diploma">College Prep Diploma</option>
+                </select>
               </div>
               <div class="col-4">
                 <label for="gender" class="form-label text-light"
                   >Gender:</label
                 >
-                <input
+                <!-- <input
                   type="text"
                   name="gender"
                   class="form-control"
                   required
-                />
+                /> -->
+                <select
+                  name="gender"
+                  id="gender"
+                  class="form-control"
+                >
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
               </div>
             </div>
             <div class="row">
@@ -85,9 +111,7 @@
                 />
               </div>
               <div class="col-4">
-                <label for="fee" class="form-label text-light"
-                  >Fee:</label
-                >
+                <label for="fee" class="form-label text-light">Fee:</label>
                 <input
                   type="number"
                   name="fee"
@@ -110,7 +134,6 @@
                   required
                 />
               </div>
-              
             </div>
 
             <br />
@@ -129,7 +152,7 @@
                 class="card-text display-6 bg-success p-3 mb-2 rounded text-light"
               >
                 Will Default?: {{prediction_test | capitalize }}
-                
+
                 <!-- The predicted house value is ${{ prediction_test }} -->
               </p>
             </div>
